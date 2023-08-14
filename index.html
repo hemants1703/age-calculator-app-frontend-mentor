@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- og meta tags -->
+  <meta property="og:title" content="Age calculator app | Hemant Sharma">
+  <meta property="og:description" content="Calculate your exact age till today!">
+  <meta property="og:image" content="./design/desktop-preview.jpg">
+  <meta property="og:url" content="https://age-calculator-app-hemant.netlify.app/">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Age Calculator App | Hemant Sharma</title>
+
+</head>
+
+<body>
+  <div class="container">
+    <main>
+      <section id="section-1">
+        <div class="section-1-element day-input-element">
+          <label for="dayInput"><span>DAY</span><br /><input required type="number" name="dayInput" id="dayInput"
+              min="1" max="31" placeholder="DD"></label>
+          <p class="errorMessage errorMessage-day">&nbsp;</p>
+        </div>
+        <div class="section-1-element month-input-element">
+          <label for="monthInput"><span>MONTH</span><br /><input required type="number" name="monthInput"
+              id="monthInput" min="1" max="12" placeholder="MM"></label>
+          <p class="errorMessage errorMessage-month">&nbsp;</p>
+        </div>
+        <div class="section-1-element year-input-element">
+          <label for="yearInput"><span>YEAR</span><br /><input required type="number" name="yearInput" id="yearInput"
+              min="1970" max="2023" placeholder="YYYY"></label>
+          <p class="errorMessage errorMessage-year">&nbsp;</p>
+        </div>
+      </section>
+
+      <div id="submit-button-2">
+        <button class="submit-button-svg-2" id="submit" onclick="calculateAge()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44">
+            <g fill="none" stroke="#FFF" stroke-width="2">
+              <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44" />
+            </g>
+          </svg>
+        </button>
+      </div>
+
+      <section id="section-2">
+        <div id="yearValue">
+          <div class="years">--</div>
+          <div class="years-text">years</div>
+        </div>
+        <div id="monthValue">
+          <div class="months">--</div>
+          <div class="months-text">months</div>
+        </div>
+        <div id="dayValue">
+          <div class="days">--</div>
+          <div class="days-text">days</div>
+        </div>
+      </section>
+    </main>
+    <div id="submit-button">
+      <button class="submit-button-svg" id="submit" onclick="calculateAge()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44">
+          <g fill="none" stroke="#FFF" stroke-width="2">
+            <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44" />
+          </g>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://twitter.com/hemants1703" target="_blank">Hemant Sharma</a>.
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
